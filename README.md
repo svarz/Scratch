@@ -9,4 +9,7 @@ CSS is written in styles.css, but minified.css will be what the website loads to
 
 
 !TODO!
-create prototype and logo, decide on site architecture, decide on web features.
+Decide on site architecture, decide on web features.
+
+AT DEVELOPMENT:
+Code mobile-first, then add media queries to edit desktop page appearence for PCs.
