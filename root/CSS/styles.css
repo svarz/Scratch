@@ -1,1 +1,9 @@
 /* Stylesheet for Scratch */
+body {
+  background-color: lightblue;
+}
+
+.navbarOutline {
+	background-color: lightslategray;
+	outline: 5px black;
+}
