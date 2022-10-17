@@ -84,7 +84,7 @@ input[type=checkbox]{
    }
 
    #backgroundimage {
-	background-image: url("../images/backgroundimage2.png");
+	background-image: url("../images/backgroundimage.png");
 	background-repeat: no-repeat;
 	background-size: 100% 100%;
 	width: 100vw;
