@@ -5,12 +5,19 @@
 }
 body {
 	font-family: DIN-Alternative;
+	background-color: rbga(236,244,252,100);
+	/* background-color: white; */
+
 }
 a {
 	text-decoration: none;
 }
 li {
 	list-style: none;
+}
+
+nav {
+	overflow: auto;
 }
 
 /* Gets font .ttf from src folder */
@@ -25,11 +32,11 @@ li {
 	align-items: center;
 	justify-content: space-between;
 	padding: 20px;
-	background-color: slategray;
+	background-color: rbga(236,244,252,100);
 	color: #fff;
 }
 .nav-links a {
-	color: #fff;
+	color: black;
 }
 
 /* LOGO */
@@ -37,8 +44,13 @@ li {
 	max-width: 374px;
 	max-height: 119px;
 	align-items: center;
-	background-color: rgba(255,255,255,.25);
+	/* background-color: rgba(255,255,255,100); */
 
+}
+
+.navbar.border {
+	border: solid;
+	border-color: rgba(112,112,112,100);
 }
 
 /* NAVBAR MENU */
@@ -70,6 +82,16 @@ input[type=checkbox]{
 	font-size: 24px;
 	user-select: none;
    }
+
+   #backgroundimage {
+	background-image: url("../images/backgroundimage2.png");
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	width: 100vw;
+	height: 100vw;
+	position: relative;
+   }
+
 
    /* APPLYING MEDIA QUERIES */
 @media (max-width: 768px) {
