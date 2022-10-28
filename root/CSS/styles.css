@@ -1,129 +1,159 @@
 * {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 body {
-	font-family: DIN-Alternative;
-	background-color: rbga(236,244,252,100);
-	/* background-color: white; */
-
+  font-family: DIN-Alternative;
+  background-color: rbga(236, 244, 252, 100);
 }
 a {
-	text-decoration: none;
+  text-decoration: none;
 }
 li {
-	list-style: none;
+  list-style: none;
 }
 
 nav {
-	overflow: auto;
+  overflow: auto;
 }
 
 /* Gets font .ttf from src folder */
 @font-face {
-	font-family: DIN-Alternative;
-	src: url(../fonts/DINAlternate-Bold.ttf);
+  font-family: DIN-Alternative;
+  src: url(../fonts/DINAlternate-Bold.ttf);
 }
 
 /* NAVBAR STYLING STARTS */
 .navbar {
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
-	padding: 20px;
-	background-color: rbga(236,244,252,100);
-	color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: rbga(236, 244, 252, 100);
+  color: #fff;
 }
 .nav-links a {
-	color: black;
+  color: black;
 }
 
 /* LOGO */
 .logo {
-	max-width: 374px;
-	max-height: 119px;
-	align-items: center;
-	/* background-color: rgba(255,255,255,100); */
-
+  max-width: 374px;
+  max-height: 119px;
+  align-items: center;
+  /* background-color: rgba(255,255,255,100); */
 }
 
 .navbar.border {
-	border: solid;
-	border-color: rgba(112,112,112,100);
+  border: solid;
+  border-color: rgba(112, 112, 112, 100);
 }
 
 /* NAVBAR MENU */
 .menu {
-	display: flex;
-	gap: 1em;
-	font-size: 18px;
-	padding-right: 50px;
+  display: flex;
+  gap: 1em;
+  font-size: 18px;
+  padding-right: 50px;
 }
 
 .menu li:hover {
-	background-color: #4c9e9e;
-	border-radius: 5px;
-	transition: 0.3s ease;
+  background-color: #4c9e9e;
+  border-radius: 5px;
+  transition: 0.3s ease;
 }
 
 .menu li {
-	padding: 5px 14px;
+  padding: 5px 14px;
 }
 
 /*RESPONSIVE NAVBAR MENU STARTS*/
 /* CHECKBOX HACK */
-input[type=checkbox]{
-	display: none;
-   	} 
-	/*HAMBURGER MENU*/
-   	.hamburger {
-	display: none;
-	font-size: 24px;
-	user-select: none;
-   }
+input[type="checkbox"] {
+  display: none;
+}
+/*HAMBURGER MENU*/
+.hamburger {
+  display: none;
+  font-size: 24px;
+  user-select: none;
+}
 
-   #backgroundimage {
-	background-image: url("../images/backgroundimage.png");
-	background-repeat: no-repeat;
-	background-size: 100% 100%;
-	width: 100vw;
-	height: 100vw;
-	position: relative;
-   }
+#backgroundimage {
+  background-image: url("../images/backgroundimage.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  width: 100vw;
+  height: 100vw;
+  position: relative;
+}
 
-
-   /* APPLYING MEDIA QUERIES */
+/* NAVBAR MEDIA QUERIES */
 @media (max-width: 768px) {
-   	.menu { 
-		display:none;
-		position: absolute;
-		background-color:slategray;
-		right: 0;
-		left: 0;
-		text-align: center;
-		padding: 16px 0;
-   	}
-  	.menu li:hover {
-		display: inline-block;
-		background-color:#4c9e9e;
-		transition: 0.3s ease;
-   	}
-   	.menu li + li {
-		margin-top: 12px;
-   	}
-   	input[type=checkbox]:checked ~ .menu{
-		display: block;
-   	}
-   	.hamburger {
-		display: block;
-   	}
-   	.dropdown {
-		left: 50%;
-		top: 30px;
-		transform: translateX(35%);
-   	}
-	.dropdown li:hover {
-		background-color: #4c9e9e;
-   	}
+  .menu {
+    display: none;
+    position: absolute;
+    background-color: slategray;
+    right: 0;
+    left: 0;
+    text-align: center;
+    padding: 16px 0;
+  }
+  .menu li:hover {
+    display: inline-block;
+    background-color: #4c9e9e;
+    transition: 0.3s ease;
+  }
+  .menu li + li {
+    margin-top: 12px;
+  }
+  input[type="checkbox"]:checked ~ .menu {
+    display: block;
+  }
+  .hamburger {
+    display: block;
+    color: black;
+  }
+  .dropdown {
+    left: 50%;
+    top: 30px;
+    transform: translateX(35%);
+  }
+  .dropdown li:hover {
+    background-color: #4c9e9e;
+  }
+
+  .home-splash {
+	flex-direction: column;
+	margin: auto;
+  }
+
+  #backgroundimage {
+    background-image: url("../images/backgroundimage.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+    height: 100vw;
+    position: relative;
+    background-attachment: fixed;
+  }
+}
+
+.home-splash {
+  flex-direction: column;
+  padding-left: 15vh;
+}
+
+.home-splash h1 {
+  display: flex;
+  align-items: flex-start;
+  padding-top: 25vh;
+  font-size: 64px;
+}
+
+.home-splash h3 {
+  display: flex;
+  align-items: flex-start;
+  padding-top: 3vh;
 }
