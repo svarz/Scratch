@@ -137,6 +137,7 @@ input[type="checkbox"] {
     background-size: cover;
     width: 100vw;
     height: 100vw;
+	max-width: 100%;
     position: relative;
     background-attachment: fixed;
   }
