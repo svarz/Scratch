@@ -61,7 +61,7 @@ nav {
 }
 
 .menu li:hover {
-  background-color: #4c9e9e;
+  background-color: rgb(0,217,122);
   border-radius: 5px;
   transition: 0.3s ease;
 }
