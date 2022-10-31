@@ -176,8 +176,8 @@ input[type="checkbox"] {
 	background-color: rgba(239, 239, 240, .75);
 	justify-content: flex-end;
 	align-items: flex-end;
-	padding-left: 15vh;
-	padding-right: 25vh;
+	padding-left: 5vh;
+	padding-right: 45vh;
 	margin-bottom: 20vh;
 }
 
@@ -205,8 +205,8 @@ input[type="checkbox"] {
 	background-color: rgba(239, 239, 240, .75);
 	justify-content: flex-start;
 	align-items: flex-start;
-	padding-left: 15vh;
-	padding-right: 25vh;
+	padding-left: 45vh;
+	padding-right: 5vh;
 }
 
 .infobox2 h2 {
