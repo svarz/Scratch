@@ -161,6 +161,7 @@ input[type="checkbox"] {
   align-items: flex-start;
   padding-top: 3vh;
   padding-bottom: 30vh;
+  font-weight: 300;
 }
 
 .infosection1 {
