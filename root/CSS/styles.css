@@ -7,6 +7,10 @@ body {
   font-family: DIN-Alternative;
   background-color: rbga(236, 244, 252, 100);
 }
+html, body {
+	overflow-x: hidden;
+	width: 100%
+}
 a {
   text-decoration: none;
 }
@@ -88,136 +92,31 @@ input[type="checkbox"] {
   height: 100vw;
   max-width: 100%;
   position: relative;
-  overflow: auto;
+  overflow: hidden;
 }
 
-/* NAVBAR MEDIA QUERIES */
-@media only screen and (max-width: 768px) {
-  .menu {
-    display: none;
-    position: absolute;
-    background-color: slategray;
-    right: 0;
-    left: 0;
-    text-align: center;
-    padding: 16px 0;
-  }
-  .menu li:hover {
-    display: inline-block;
-    background-color: rgb(0, 217, 122);
-    transition: 0.3s ease;
-  }
-  .menu li + li {
-    margin-top: 12px;
-  }
-  input[type="checkbox"]:checked ~ .menu {
-    display: block;
-  }
-  .hamburger {
-    display: block;
-    color: black;
-  }
-
-  .dropdown {
-    left: 50%;
-    top: 30px;
-    transform: translateX(35%);
-  }
-  .dropdown li:hover {
-    background-color: rgb(0, 217, 122);
-  }
-
-  .home-splash {
-    flex-direction: column;
-    margin: auto;
-    padding-left: none;
-  }
-
-  .home-title {
-    align-items: flex-start;
-    justify-items: flex-start;
-    justify-content: flex-start;
-    font-size: 46px;
-  }
-
-  .infobox1 {
-    display: flex;
-    flex-direction: column;
-    background-color: rgba(239, 239, 240, 0.75);
-    justify-content: flex-end;
-    align-items: flex-end;
-    padding-left: 7vh;
-    padding-right: 7vh;
-    margin-bottom: 20vh;
-    overflow: auto;
-  }
-
-  img[src^="./images/Business_Man.png"] {
-    width: 245px;
-    height: 175px;
-    border: 13px solid rgba(0, 217, 122, 0.3);
-    margin-right: 50px;
-  }
-
-  .home-splash h1 {
-    display: flex;
-    align-items: flex-start;
-    padding-top: 25vh;
-    font-size: 64px;
-    padding-left: 3vh;
-  }
-
-  .infobox1 h2 {
-	font-size: 36px;
-	font-weight: 100;
-	padding-top: 7vh;
-	padding-bottom: 8vh;
-	letter-spacing: 2px;
-	justify-content: center;
-	align-items: center;
-	max-width: 100%;
-  }
-
-  .infobox1 li {
-	font-size: 20px;
-	font-weight: 100;
-	letter-spacing: 0px;
-	list-style: circle;
-	padding-bottom: 7vh;
-	margin-left: 4vh;
-	max-width: 100%;
-  }
-
-  #backgroundimage {
-    background-image: url("../images/backgroundimage.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    max-width: 100%;
-    position: relative;
-    background-attachment: fixed;
-    overflow: auto;
-  }
+.width-adjust {
+	max-width: 100vh;
+	overflow: none;
 }
-
-/* custom--- */
 
 .home-splash {
   flex-direction: column;
+  overflow-y: auto;
 }
 
 .home-splash h1 {
-  display: flex;
   align-items: flex-start;
   padding-top: 25vh;
-  font-size: 72px;
+  font-size: 76px;
+  font-weight: 550;
   padding-left: 15vh;
 }
 
 .home-splash h3 {
-  display: flex;
   align-items: flex-start;
   padding-top: 3vh;
-  padding-bottom: 35.5vh;
+  margin-bottom: 35.5vh;
   font-size: 32px;
   font-weight: 300;
   padding-left: 15vh;
@@ -294,4 +193,110 @@ input[type="checkbox"] {
   justify-content: flex-start;
   padding-bottom: 1vh;
   margin-left: 5vh;
+}
+
+/* SMARTPHONE MEDIA QUERIES */
+@media only screen and (max-width: 768px) {
+	.menu {
+	  display: none;
+	  position: absolute;
+	  background-color: slategray;
+	  right: 0;
+	  left: 0;
+	  text-align: center;
+	  padding: 16px 0;
+	}
+	.menu li:hover {
+	  display: inline-block;
+	  background-color: rgb(0, 217, 122);
+	  transition: 0.3s ease;
+	}
+	.menu li + li {
+	  margin-top: 12px;
+	}
+	input[type="checkbox"]:checked ~ .menu {
+	  display: block;
+	}
+	.hamburger {
+	  display: block;
+	  color: black;
+	}
+  
+	.dropdown {
+	  left: 50%;
+	  top: 30px;
+	  transform: translateX(35%);
+	}
+	.dropdown li:hover {
+	  background-color: rgb(0, 217, 122);
+	}
+  
+	.home-splash {
+	  flex-direction: column;
+	  margin: auto;
+	  padding-left: 0vh;
+	}
+
+	.home-splash h3 {
+		align-items: center;
+		align-content: center;
+		padding-top: 3vh;
+		margin-bottom: 35.5vh;
+		font-size: 32px;
+		font-weight: 300;
+		/* padding-left: 5vh; */
+	  }
+  
+	.infobox1 {
+	  display: flex;
+	  flex-direction: column;
+	  background-color: rgba(239, 239, 240, 0.75);
+	  align-items: center;
+	  margin-bottom: 20vh;
+	}
+	
+	img[src^="./images/Business_Man.png"] {
+		width: 245px;
+		height: 175px;
+		border: 13px solid rgba(0, 217, 122, 0.3);
+		margin-right: 50px;
+	  }
+
+	.home-splash h1 {
+	  display: flex;
+	  justify-content: center;
+	  font-size: 64px;
+	  padding-left: 3vh;
+	}
+  
+	.infobox1 h2 {
+	  font-size: 36px;
+	  font-weight: 100;
+	  padding-top: 7vh;
+	  padding-bottom: 8vh;
+	  letter-spacing: 2px;
+	  justify-content: center;
+	  align-items: center;
+	  max-width: 100%;
+	}
+  
+	.infobox1 li {
+	  font-size: 20px;
+	  font-weight: 100;
+	  letter-spacing: 0px;
+	  list-style: circle;
+	  /* padding-bottom: 7vh; */
+	  margin-left: 4vh;
+	  max-width: 100%;
+	}
+  
+	#backgroundimage {
+	  background-image: url("../images/backgroundimage.png");
+	  background-repeat: no-repeat;
+	  background-size: cover;
+	  max-width: 100%;
+	  position: relative;
+	  background-attachment: fixed;
+	  overflow: auto;
+	}
 }
