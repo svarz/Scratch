@@ -9,3 +9,4 @@ CSS is written in styles.css, but minified.css will be what the website loads to
 --TODO--
 . fix dropdown menu on mobile. covers logo on dropdown. add margin-bottom to css to correct.
 . hamburger menu sometimes not showing on mobile. move flexbox to left to correct?
+. fix font sizes of index subsections on mobile. media query not overriding default css.
